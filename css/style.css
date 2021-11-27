@@ -502,3 +502,155 @@ gallery css ends
 /* ==============
 team css ends
 ================== */
+#testimonial .testimonial-banner{
+    padding:30px 0px 80px 0px ;
+    background: url(../images/testimonial-bg.jpg) no-repeat center/cover;
+    z-index: 1;
+}
+#testimonial .testimonial-banner::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--overdark2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#testimonial .testimonial-banner .testimonial-slider .testimonial-item{
+    margin-right: 30px;
+}
+#testimonial .testimonial-banner .testimonial-slider .testimonial-item:last-of-type{
+    margin-right: 0px;
+}
+#testimonial .testimonial-banner .testimonial-slider{
+    position: relative;
+}
+#testimonial .testimonial-item .testimonial-image{
+    margin-right: 10px;
+}
+#testimonial .testimonial-item .testimonial-about h3{
+    color: var(--secondcol);
+}
+#testimonial .testimonial-item .testimonial-about h4{
+    color: var(--secondcol);
+    padding: 8px 0;
+}
+#testimonial .testimonial-item .testimonial-about .ratings i{
+    color: var(--brandcol);
+}
+#testimonial .testimonial-item .testimonial-text p{
+    color: var(--light1);
+    line-height: 18px;
+    padding: 10px 30px 0px 0px;
+}
+#testimonial .testimonial-slider .slick-dots{
+    display: flex;
+    position: absolute;
+    bottom:-50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin:0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#testimonial .testimonial-slider .slick-dots li{
+    height: 16px;
+    width: 16px;
+    border: 1px solid #ffffff;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#testimonial .testimonial-slider .slick-dots li.slick-active{
+    background: var(--brandcol);
+    border-color: var(--brandcol);
+}
+#testimonial .testimonial-slider .slick-dots li:last-child{
+    margin-right: 0;
+}
+#testimonial .testimonial-slider .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+/* ==============
+testimonial css ends
+================== */
+.bg1{
+    background: url(../images/member1.jpg) no-repeat center/ cover;
+}
+.bg2{
+    background: url(../images/member2.jpg) no-repeat center/ cover;
+}
+.bg3{
+    background: url(../images/member3.jpg) no-repeat center/ cover;
+}
+#membership .member-item .member-head{
+    background: var(--light2);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#membership .member-item:hover .member-head{
+    background: var(--brandcol);
+}
+#membership .member-item .member-head h4{
+    color: var(--darkcol);
+    padding: 20px 0px;
+}
+#membership .member-item .member-price{
+    padding: 35px 0;
+    position: relative;
+    z-index: 1;
+}
+#membership .member-item .member-price::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--overdark2);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#membership .member-item .member-price h3{
+    color: var(--secondcol);
+}
+#membership .member-item .member-details h5{
+    background: var(--light1);
+    color: var(--darkmid);
+    padding-top: 25px;
+}
+#membership .member-item .member-details h5:first-child{
+    padding-top: 40px;
+}
+#membership .member-item .member-details h5:last-child{
+    padding-bottom: 40px;
+}
+#membership .member-item .member-btn{
+    background: var(--light2);
+}
+#membership .member-item .member-btn .cta-btn{
+    color: var(--darkcol);
+    padding: 5px 0 !important;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#membership .member-item:hover .member-btn .cta-btn{
+    background: var(--brandcol);
+}
+
+/* ==============
+membership css ends
+================== */
