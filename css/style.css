@@ -25,6 +25,8 @@ img{
     --overred:rgba(226, 62, 56, 0.5);
     --overdark1:rgba(0, 0, 0, 0.6);
     --overdark2:rgba(0, 0, 0, 0.8);
+    --overdark3:rgba(0, 0, 0, 0.9);
+    --overdark4:rgba(0, 0, 0, 0.85);
     --bg:rgba(53, 53, 53, 0.25);
     --ff1:'Oswald', sans-serif;
     --ff2:'Open Sans', sans-serif;
@@ -48,6 +50,10 @@ common css ends
     font-family:var(--ff2);
     font-weight: 400;
 }
+.open-bold{
+    font-family:var(--ff2);
+    font-weight: 700;
+}
 .f-13{
     font-size: 13px;
 }
@@ -56,6 +62,9 @@ common css ends
 }
 .f-16{
     font-size: 16px;
+}
+.f-20{
+    font-size: 20px;
 }
 .f-22{
     font-size: 22px;
@@ -80,6 +89,9 @@ common css ends
 }
 .col-brand{
     color: var(--brandcol);
+}
+.twittercol{
+    color: var(--twitter);
 }
 /* ==============
 font family css ends
@@ -602,10 +614,19 @@ testimonial css ends
 }
 #membership .member-item:hover .member-head{
     background: var(--brandcol);
+    color: var(--secondcol);
 }
 #membership .member-item .member-head h4{
     color: var(--darkcol);
     padding: 20px 0px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#membership .member-item:hover .member-head h4{
+    color: var(--secondcol);
 }
 #membership .member-item .member-price{
     padding: 35px 0;
@@ -649,8 +670,234 @@ testimonial css ends
 }
 #membership .member-item:hover .member-btn .cta-btn{
     background: var(--brandcol);
+    color: var(--secondcol);
 }
 
 /* ==============
 membership css ends
+================== */
+#funfact{
+    margin-top: 80px;
+    padding: 45px 0;
+    background: url(../images/funfact-bg.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+}
+#funfact::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    background: var(--overdark3);
+    z-index: -1;
+}
+#funfact .container .funfact-item h5{
+    color: var(--secondcol);
+}
+#funfact .container .funfact-item p{
+    color: var(--secondcol);
+}
+/* ==============
+funfact css ends
+================== */
+#routine{
+    margin-bottom: 80px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-item .nav-link:hover,
+.nav-tabs .nav-link.active{
+    border-color: transparent!important;
+}
+#routine .nav-tabs .nav-item{
+    width: 16.66%;
+}
+#routine .nav-tabs .nav-item .nav-link{
+    color: var(--darkcol);
+    background: var(--light1);
+    line-height: 50px;
+}
+#routine .nav-tabs .nav-item .nav-link:hover{
+    background: var(--brandcol);
+    color: var(--secondcol);
+}
+#routine .nav-tabs .nav-item .nav-link.active{
+    background: var(--brandcol);
+    color: var(--secondcol);
+}
+#routine .routine-tab{
+    margin-top: 30px;
+}
+#routine .routine-tab .tab-content ul li{
+    width: 20%;
+    background: var(--light1);
+    color: var(--darkcol);
+    padding: 50px 0;
+    transform: scale(.98);
+    -webkit-transform: scale(.98);
+    -moz-transform: scale(.98);
+    -ms-transform: scale(.98);
+    -o-transform: scale(.98);
+}
+#routine .routine-tab .tab-content ul li.active{
+    background: var(--brandcol);
+    color: var(--secondcol);
+}
+/* ==============
+routine css ends
+================== */
+#market{
+    position: relative;
+    padding-bottom: 80px;
+}
+#market .market-slider .slick-list{
+    padding: 5px 0!important;
+}
+#market .market-slider .market-item{
+    margin:0 15px;
+}
+#market .market-slider .prev-arrow{
+    position: absolute;
+    left:-30px;
+    top: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--darkcol);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 99;
+}
+#market .market-slider .prev-arrow:hover{
+    color: var(--brandcol);
+}
+#market .market-slider .next-arrow{
+    position: absolute;
+    right:-30px;
+    top: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--darkcol);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 99;
+}
+#market .market-slider .next-arrow:hover{
+    color: var(--brandcol);
+}
+#market .market-slider .market-item.slick-center{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2) ;
+}
+/* ==============
+market css ends
+================== */
+#footer-bg{
+    padding-top: 30px;
+    background: url(../images/footer-bg.jpg)no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+}
+#footer-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:var(--overdark4) ;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#footer-bg .footer-main{
+    padding: 30px 0;
+    position: relative;
+}
+#footer-bg .footer-main::before{
+    content: '';
+    width: 100%;
+    height:1px;
+    background: var(--light1);
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+#footer-bg .footer-main::after{
+    content: '';
+    width: 100%;
+    height:1px;
+    background: var(--light1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#footer-bg .footer-main .footer-item h3{
+    color: var(--secondcol);
+    padding: 30px 0;
+}
+#footer-bg .footer-main .footer-item ul li{
+    color: var(--light1);
+    line-height: 18px;
+}
+#footer-bg .footer-main .footer-item .twitter-feed li{
+    margin-bottom: 30px;
+}
+#footer-bg .footer-main .footer-item .twitter-feed li p{
+    margin-left: 10px;
+}
+#footer-bg .footer-main .footer-item .twitter-feed li:last-of-type{
+    margin-bottom: 0;
+}
+#footer-bg .footer-main .footer-item .footer-gallery li{
+    margin: 5px;
+}
+#footer-bg .footer-main .footer-item .footer-contact li{
+    margin-bottom:20px ;
+}
+#footer-bg .footer-main .footer-item .footer-contact li:last-of-type{
+    margin-bottom: 0;
+}
+#footer-bg .footer-main .footer-item .footer-contact li .icon{
+    margin-right: 10px;
+}
+#footer-bg .footer-main .footer-item .footer-contact li a{
+    color: var(--light1);
+    line-height: 18px;
+}
+#footer-bg .footer-main .footer-item a.btn{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 6px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#footer-bg .footer-main .footer-item a.btn:last-of-type{
+    margin-right: 0;
+}
+#footer-bg .footer-main .footer-item a.btn:hover{
+    color: var(--secondcol);
+    background: var(--brandcol);
+    border-color: var(--brandcol);
+}
+#footer-bg .footer-copy{
+    padding: 20px 0;
+}
+#footer-bg .footer-copy .copyright p{
+    color: var(--secondcol);
+}
+#footer-bg .footer-copy .copyright p a{
+    color: var(--brandcol);
+}
+footer .btn-check:focus + .btn-outline-light, footer .btn-outline-light:focus{
+    box-shadow: none!important;
+}
+/* ==============
+footer css ends
 ================== */
