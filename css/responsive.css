@@ -1,0 +1,593 @@
+/* ====================
+extra small device
+===================== */
+    @media(max-width:575px){
+
+    /* menu css starts */
+
+    .navbar .navbar-brand,
+    .navbar .navbar-brand img{
+        transform: skewX(0);
+        -webkit-transform: skewX(0);
+        -moz-transform: skewX(0);
+        -ms-transform: skewX(0);
+        -o-transform: skewX(0);
+    }
+    .navbar .navbar-brand{
+        padding: 0 15px!important;
+        position: unset!important;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+        padding: 0;
+        margin-right: 20px;
+        font-size: 30px;
+        color: #e23e38;
+    }
+    .navbar-light .navbar-toggler:focus{
+        box-shadow: none!important;
+    }
+    .navbar-light .navbar-nav{
+        align-items: flex-end;
+        width:100px ;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .navbar-light .navbar-nav .nav-item .nav-link{
+        display: inline-block!important;
+        width: 100px;
+        text-align: center;
+    }
+    /* menu css end */
+    
+    /* banner css starts */
+    #banner .banner-slider .bg1 .container .text h3{
+        font-size: 15px;
+    }
+    #banner .banner-slider .bg1 .container .text h2{
+        font-size: 30px;
+    }
+    .bg1 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg2 .container .text h3{
+        font-size: 15px;
+    }
+    #banner .banner-slider .bg2 .container .text h2{
+        font-size: 30px;
+    }
+    .bg2 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg3 .container .text h3{
+        font-size: 15px;
+    }
+    #banner .banner-slider .bg3 .container .text h2{
+        font-size: 30px;
+    }
+    .bg3 p{
+        padding:0;
+    }
+
+    #banner .banner-slider .bg1 .container .text h3::before,
+    #banner .banner-slider .bg1 .container .text h3::after{
+        display: none;
+    }
+    #banner .banner-slider .bg1 .container .text h2::before,
+    #banner .banner-slider .bg1 .container .text h2::after{
+        display: none;
+    }
+    #banner .banner-slider .bg1 .container .text p::before,
+    #banner .banner-slider .bg1 .container .text p::after{
+        display: none;
+    }
+
+    /* banner css end */
+
+    /* about css starts */
+
+    #about{
+        margin-top:40px ;
+    }
+    #about .about-text p{
+        padding: 0;
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 20px!important;
+    }
+
+    /* about css end */
+
+    /* gallery css starts */
+
+    #gallery .section-head{
+        margin-top:40px ;
+    }
+
+    /* gallery css end */
+
+    /* team css starts */
+
+    #team .section-head{
+        margin-top: 40px;
+    }
+    #team .team-item{
+        margin-top: 45px;
+    }
+    /* team css end */
+
+    /* testimonial css starts */
+
+    #testimonial .section-head{
+        margin-top: 40px;
+    }
+    #testimonial .testimonial-item .testimonial-text p{
+        padding-right:0px ;
+    }
+    /* testimonial css end */
+
+    /* membership css starts */
+    #membership .section-head{
+        margin-top: 40px;
+    }
+    #membership .member-item{
+        margin-bottom: 20px;
+    }
+    #membership .member-item:nth-of-type(3){
+        margin-bottom: 0px;
+    }
+    #membership .member-item .member-head h4{
+        padding: 10px;
+        font-size: 14px;
+    }
+    #membership .member-item .member-price h3{
+        font-size: 35px;
+    }
+    #membership .member-item .member-price h3 span{
+        font-size: 18px;
+    }
+    #membership .member-item .member-details h5:first-child{
+        padding-top: 20px;
+    }
+    #membership .member-item .member-details h5{
+        padding-top: 15px;
+    }
+    #membership .member-item .member-details h5:last-child{
+        padding-bottom: 20px;
+    }
+    /* membership css end */
+
+    /* funfact css starts */
+    #funfact{
+        margin-top: 40px;
+        padding: 20px 0;
+    }    
+
+    #funfact .funfact-item{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #funfact .funfact-item:nth-of-type(5){
+        margin-bottom:0px;
+    }
+    #funfact .container .funfact-item h5{
+        font-size: 30px;
+    }
+    #funfact .container .funfact-item p{
+        font-size: 13px;
+    }
+
+    /* funfact css end */
+
+    /* routine css starts */
+    #routine{
+        margin-bottom: 40px;
+    }
+    #routine .section-head{
+        margin-top: 40px;
+    }
+    #routine .nav-tabs .nav-item .nav-link{
+        font-size: 13px!important;
+    }
+    #routine .nav-tabs .nav-item{
+        width: 100%;
+    }
+    #routine .routine-tab .tab-content ul li{
+        width: 100%;
+    }
+
+    /* routine css end */
+
+    /* market css starts */
+    #market{
+        padding-bottom: 40px;
+    }
+
+    /* market css end */
+
+    /* scrolling css starts */
+
+    .arrow{
+        bottom:70px;
+        right:5px;
+    }
+
+    /* scrolling css end */
+}
+
+/* ====================
+extra small device
+===================== */
+
+
+/* ====================
+small device
+===================== */
+@media (min-width:576px) and (max-width:767px){
+    
+    /* menu css starts */
+
+    .navbar .navbar-brand,
+    .navbar .navbar-brand img{
+        transform: skewX(0);
+        -webkit-transform: skewX(0);
+        -moz-transform: skewX(0);
+        -ms-transform: skewX(0);
+        -o-transform: skewX(0);
+    }
+    .navbar .navbar-brand{
+        padding: 0 15px!important;
+        position: unset!important;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+        padding: 0;
+        margin-right: 20px;
+        font-size: 30px;
+        color: #e23e38;
+    }
+    .navbar-light .navbar-toggler:focus{
+        box-shadow: none!important;
+    }
+    .navbar-light .navbar-nav{
+        align-items: flex-end;
+        width: 100px;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .navbar-light .navbar-nav .nav-item .nav-link{
+        display: inline-block!important;
+        width: 100px;
+        text-align: center;
+    }
+        /* menu css end */
+
+        /* banner css starts */
+
+    #banner .banner-slider .bg1 .container .text h3{
+        font-size: 20px;
+    }
+    #banner .banner-slider .bg1 .container .text h2{
+        font-size: 40px;
+    }
+    .bg1 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg2 .container .text h3{
+        font-size: 20px;
+    }
+    #banner .banner-slider .bg2 .container .text h2{
+        font-size: 40px;
+    }
+    .bg2 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg3 .container .text h3{
+        font-size: 20px;
+    }
+    #banner .banner-slider .bg3 .container .text h2{
+        font-size: 40px;
+    }
+    .bg3 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg1 .container .text h3::before,
+    #banner .banner-slider .bg1 .container .text h3::after{
+        display: none;
+    }
+    #banner .banner-slider .bg1 .container .text h2::before,
+    #banner .banner-slider .bg1 .container .text h2::after{
+        display: none;
+    }
+    #banner .banner-slider .bg1 .container .text p::before,
+    #banner .banner-slider .bg1 .container .text p::after{
+        display: none;
+    }
+    /* banner css end */
+
+    /* about css starts */
+    #about{
+        margin-top:40px ;
+    }
+    #about .about-text p{
+        padding: 0;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px!important;
+    }
+
+    /* about css end */
+
+    /* gallery css starts */
+
+    #gallery .section-head{
+        margin-top:40px ;
+    }
+
+    /* gallery css end */
+
+    /* team css starts */
+    #team .section-head{
+        margin-top: 40px;
+    }
+    #team .team-item{
+        margin-top: 45px;
+    }
+    /* team css end */
+
+    /* testimonial css starts */ 
+    #testimonial .section-head{
+        margin-top: 40px;
+    }
+    /* testimonial css end */
+
+     /* membership css starts */
+    #membership .section-head{
+        margin-top: 40px;
+    }
+    #membership .member-item{
+        margin-bottom: 20px;
+    }
+    #membership .member-item:nth-of-type(3){
+        margin-bottom: 0px;
+    }
+    #membership .member-item .member-head h4{
+        font-size: 16px;
+    }
+    #membership .member-item .member-price h3{
+        font-size: 45px;
+    }
+    #membership .member-item .member-price h3 span{
+        font-size: 24px;
+    }
+    #membership .member-item .member-details h5:first-child{
+        padding-top: 30px;
+    }
+    #membership .member-item .member-details h5{
+        padding-top: 25px;
+    }
+    #membership .member-item .member-details h5:last-child{
+        padding-bottom: 30px;
+    }
+    /* membership css end */
+
+    /* funfact css starts */
+    #funfact{
+        margin-top: 40px;
+        padding: 20px 0;
+    }
+    #funfact .container .funfact-item h5{
+        font-size: 35px;
+    }
+    #funfact .container .funfact-item p{
+        font-size: 14px;
+    }
+    /* funfact css end */
+
+    /* routine css starts */
+    #routine{
+        margin-bottom: 40px;
+    }
+    #routine .section-head{
+        margin-top: 40px;
+    }
+    #routine .nav-tabs .nav-item .nav-link{
+        font-size: 13px!important;
+    }
+    #routine .nav-tabs .nav-item{
+        width: 100%;
+    }
+    #routine .routine-tab .tab-content ul li{
+        width: 50%;
+    }
+
+    /* routine css end */
+
+    /* market css starts */
+    #market{
+        padding-bottom: 40px;
+    }
+    /* market css end */
+}
+
+/* ====================
+small device
+===================== */
+
+/* ====================
+medium device
+===================== */
+@media (min-width:768px) and (max-width:991px){
+    /* menu css starts */
+    .navbar .navbar-brand,
+    .navbar .navbar-brand img{
+        transform: skewX(0);
+        -webkit-transform: skewX(0);
+        -moz-transform: skewX(0);
+        -ms-transform: skewX(0);
+        -o-transform: skewX(0);
+    }
+    .navbar .navbar-brand{
+        padding: 0 15px!important;
+        position: unset!important;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+        padding: 0;
+        margin-right: 20px;
+        font-size: 30px;
+        color: #e23e38;
+    }
+    .navbar-light .navbar-toggler:focus{
+        box-shadow: none!important;
+    }
+    .navbar-light .navbar-nav{
+        align-items: flex-end;
+        width: 200px;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .navbar-light .navbar-nav .nav-item .nav-link{
+        display: inline-block!important;
+        width: 200px;
+        text-align: center;
+    }
+    /* menu css end */
+
+    /* banner css end */
+
+    #banner .banner-slider .bg1 .container .text h3{
+        font-size: 25px;
+    }
+    #banner .banner-slider .bg1 .container .text h2{
+        font-size: 50px;
+    }
+    .bg1 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg2 .container .text h3{
+        font-size: 20px;
+    }
+    #banner .banner-slider .bg2 .container .text h2{
+        font-size: 40px;
+    }
+    .bg2 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg3 .container .text h3{
+        font-size: 20px;
+    }
+    #banner .banner-slider .bg3 .container .text h2{
+        font-size: 40px;
+    }
+    .bg3 p{
+        padding:0;
+    }
+    #banner .banner-slider .bg1 .container .text h3::before,
+    #banner .banner-slider .bg1 .container .text h3::after{
+        display: none;
+    }
+    #banner .banner-slider .bg1 .container .text h2::before,
+    #banner .banner-slider .bg1 .container .text h2::after{
+        display: none;
+    }
+    #banner .banner-slider .bg1 .container .text p::before,
+    #banner .banner-slider .bg1 .container .text p::after{
+        display: none;
+    }
+    /* banner css end */
+
+    /* about css starts */
+    #about{
+        margin-top:40px ;
+    }
+    #about .about-text p{
+        padding: 0;
+        margin-bottom: 20px!important;
+    }
+
+    /* about css end */
+
+    /* gallery css starts */
+    #gallery .section-head{
+        margin-top:40px ;
+    }
+
+    /* gallery css end */
+
+    /* team css starts */
+    #team .section-head{
+        margin-top: 40px;
+    }
+    #team .team-item{
+        margin-top: 45px;
+    }
+    /* team css end */
+
+    /* testimonial css starts */ 
+    #testimonial .section-head{
+        margin-top: 40px;
+    }
+    /* testimonial css end */
+
+    /* membership css starts */
+    #membership .section-head{
+        margin-top: 40px;
+    }
+    #membership .member-item{
+        margin-bottom: 20px;
+    }
+    #membership .member-item:nth-of-type(3){
+        margin-bottom: 0px;
+    }
+    #membership .member-item .member-head h4{
+        font-size: 14px;
+    }
+    #membership .member-item .member-price h3{
+        font-size:40px;
+    }
+    #membership .member-item .member-price h3 span{
+        font-size: 20px;
+    }
+    #membership .member-item .member-details h5:first-child{
+        padding-top: 25px;
+    }
+    #membership .member-item .member-details h5{
+        padding-top: 20px;
+    }
+    #membership .member-item .member-details h5:last-child{
+        padding-bottom: 25px;
+    }
+    /* membership css end */
+
+    /* funfact css starts */
+    #funfact{
+        margin-top: 40px;
+    }
+    #funfact .container .funfact-item h5{
+        font-size: 35px;
+    }
+    #funfact .container .funfact-item p{
+        font-size: 14px;
+    }
+    /* funfact css end */
+
+    /* routine css starts */
+    #routine{
+        margin-bottom: 40px;
+    }
+    #routine .section-head{
+        margin-top: 40px;
+    }
+    #routine .routine-tab .tab-content ul li{
+        width: 50%;
+    }
+
+    /* routine css end */
+
+    /* market css starts */
+    #market{
+        padding-bottom: 40px;
+    }
+    /* market css end */
+}
+/* ====================
+medium device
+===================== */

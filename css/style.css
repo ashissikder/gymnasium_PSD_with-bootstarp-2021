@@ -1,17 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-img{
-    vertical-align: middle;
-}
 :root{
     --brandcol:#e23e38;
     --secondcol:#ffffff;
@@ -30,6 +16,21 @@ img{
     --bg:rgba(53, 53, 53, 0.25);
     --ff1:'Oswald', sans-serif;
     --ff2:'Open Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
 }
 /* ================
 common css ends
@@ -133,7 +134,7 @@ heading css ends
 }
 .navbar-light .navbar-nav .nav-item .nav-link{
     line-height: 50px;
-    padding:0 10px;
+    padding:0 15px;
     color: var(--light1);
     position: relative;
     z-index: 1;
@@ -163,10 +164,10 @@ heading css ends
 .navbar-light .navbar-nav .nav-item .nav-link:hover::before{
     height: 100%;
 }
-.navbar-light .navbar-nav .nav-item .nav-link.active{
-    color: var(--darkcol);
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    color: var(--brandcol);
 }
-.navbar-light .navbar-nav .nav-item .nav-link.active::before{
+.navbar-light .navbar-nav .nav-item.active .nav-link::before{
     height: 100%;
 }
 .navbar-light .navbar-nav .nav-item .nav-link::after{
@@ -187,7 +188,7 @@ heading css ends
 .navbar-light .navbar-nav .nav-item .nav-link:hover::after{
     width: 100%;
 }
-.navbar-light .navbar-nav .nav-item .nav-link.active::after{
+.navbar-light .navbar-nav .nav-item.active .nav-link::after{
     width: 100%;
 }
 /* ==============
@@ -841,6 +842,10 @@ market css ends
     color: var(--light1);
     line-height: 18px;
 }
+#footer-bg .footer-main .footer-item .opening-hour span{
+    display: inline-block;
+    width: 105px;
+}
 #footer-bg .footer-main .footer-item .twitter-feed li{
     margin-bottom: 30px;
 }
@@ -900,4 +905,30 @@ footer .btn-check:focus + .btn-outline-light, footer .btn-outline-light:focus{
 }
 /* ==============
 footer css ends
+================== */
+
+
+/* ==============
+scrolling css starts
+================== */
+
+.arrow{
+    width: 30px;
+    border: 1px solid #e23e38;
+    text-align: center;
+    cursor: pointer;
+    bottom: 10px;
+    right: 15px;
+    z-index: 99999;
+    display: none;
+}
+.arrow i{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    color: #e23e38;
+}
+
+/* ==============
+scrolling css ends
 ================== */
