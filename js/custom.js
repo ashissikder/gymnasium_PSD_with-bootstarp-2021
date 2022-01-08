@@ -1,4 +1,39 @@
 $(document).ready(function(){
+    'use strict';
+
+    // navbar-nav active
+    $('.navbar ul li').on('click', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    // window scrolling
+    $(window).on('scroll',function(){
+        var scrolling = $(this).scrollTop();
+        if(scrolling > 500){
+        $('.arrow').fadeIn();
+        }
+        else{
+        $('.arrow').fadeOut();
+        }
+    });
+
+    $('.arrow').on('click',function(){
+        $('html,body').animate({
+            scrollTop:"0px",
+        },3000);
+    });
+
+    // color-picker
+    $('.color-picker .color-btn').on('click',function(){
+        $('.color-picker').toggleClass('color-pos');
+    });
+    // dark-mode click
+    $('.color-picker ul .dark-mode ').on('click',function(){
+        $('body').addClass('dark');
+    });
+    $('.color-picker ul .light-mode ').on('click',function(){
+        $('body').removeClass('dark');
+    });
     // banner slider
     $('.banner-slider').slick({
         arrows:false,
@@ -72,33 +107,5 @@ $(document).ready(function(){
             },    
         ],
     });
-
-// navbar-nav active
-$('.navbar ul li').on('click', function(){
-    $(this).addClass('active').siblings().removeClass('active');
-});
-
-// window scrolling
-$(window).scroll(function(){
-    var scrolling = $(this).scrollTop();
-    if(scrolling > 500){
-        $('.arrow').fadeIn();
-    }
-    else{
-        $('.arrow').fadeOut();
-    }
-});
-
-$('.arrow').on('click',function(){
-    $('html,body').animate({
-        scrollTop:"0px",
-    },3000);
-});
-
-// $('.arrow').on('click', function(){
-//     $('html,body').animate({
-//         scrollTop:"0px",
-//     })
-// });
 
 });
